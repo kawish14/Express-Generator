@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Intro to MapView - Create a 2D map</title>
+      <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.12/"></script>
+    <style>
+     html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #infoDiv {
+      position: absolute;
+      bottom: 15px;
+      right: 0;
+      max-height: 80%;
+      max-width: 300px;
+      background-color: black;
+      padding: 8px;
+      border-top-left-radius: 5px;
+      color: white;
+      opacity: 0.8;
+    }
+
+    #avgDiv {
+      font-family: "Avenir Next";
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-height: 50px;
+      min-width: 300px;
+      max-height: 80%;
+      max-width: 300px;
+      background-color: black;
+      padding: 8px;
+      border-top-left-radius: 5px;
+      color: white;
+      opacity: 0.8;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+
+        <script>
+      require([
+      "esri/views/MapView",
+      "esri/Map",
+      "esri/layers/FeatureLayer",
+      "esri/widgets/Search",
+      "esri/Graphic",
+      "esri/geometry/Point",
+      "esri/widgets/Legend",
+      "esri/request",
+      "esri/core/watchUtils"
+], function(MapView, Map, FeatureLayer, Search, Point,Graphic, Legend, esriRequest,watchUtils) {
+  const url ="http://localhost:7000/";
+
+  const fields = [
+    {
+      name: "ObjectID",
+      alias: "ObjectID",
+      type: "oid"
+    },
+    {
+      name: "Name",
+      alias: "Name",
+      type: "string"
+    },
+    {
+      name: "FAT",
+      alias: "FAT",
+      type: "string"
+    },
+    {
+      name: "DC",
+      alias: "DC",
+      type: "string"
+    },
+    {
+      name: "ID",
+      alias: "ID",
+      type: "string"
+    },
+    {
+      name: "POP",
+      alias: "POP",
+      type: "string"
+    }
+  ];
+
+  const pTemplate = {
+    title: "{title}",
+    content: [
+      {
+        type: "fields",
+        fieldInfos: [
+          {
+            fieldName: "Name",
+            label: "Name",
+            visible: true
+          },
+          {
+            fieldName: "ID",
+            label: "ID",
+            visible: true
+          },
+          {
+            fieldName: "DC",
+            label: "DC",
+            visible: true
+          },
+          {
+            fieldName: "FAT",
+            label: "FAT",
+            visible: true
+          },
+          {
+            fieldName: "POP",
+            label: "POP",
+            visible: true
+          }
+        ]
+      }
+    ]
+  };
+
+  const quakesRenderer = {
+    type: "simple",
+    symbol:  {
+        type: "simple-marker",
+            color: "blue",
+            size: 5,
+            outline: { // autocasts as new SimpleLineSymbol()
+                width: 0.5,
+                color: [0, 0, 0, 0.2]
+            }
+        }
+  };
+  
+    const featureLayer = new FeatureLayer({
+      geometryType: "point",
+      source: [],
+      fields: fields,
+      objectIdField: "ObjectID",
+      renderer: quakesRenderer,
+      popupTemplate: pTemplate
+    });
+
+  const map = new Map({
+    basemap: "satellite",
+    layers: [featureLayer]
+  });
+
+  const view = new MapView({
+    container: "viewDiv",
+    map: map,
+    center: [68.589073, 26.092168],
+    zoom: 8,
+    ui: {
+      padding: {
+        bottom: 15,
+        right: 0
+      }
+    }
+  });
+
+  var sources = [ 
+  {
+  layer: featureLayer,
+  searchFields: ["Name"],
+  displayField: "Name",
+  exactMatch: false,
+  outFields: ["*"],
+  name: "Customer",
+  placeholder: "Farooq Jawed, 99",
+  maxResults: 6,
+  maxSuggestions: 6,
+  suggestionsEnabled: true,
+  minSuggestCharacters: 0
+}
+];
+
+  var searchWidget = new Search({
+  view: view,
+  sources: []
+});
+    searchWidget.sources = sources;
+
+view.ui.add(searchWidget, {
+  position: "top-right",
+  index: 2
+});
+
+  const fetchGeoJson = () => esriRequest(url, {
+    responseType:'json',
+    query:{
+      f:'json'
+    }
+  }).then(response =>{
+    
+    var geojsonResult ={
+      type: "FeatureCollection",
+      features:[]
+    }
+    var geo = geojsonResult.features
+    /*var featureArray = {}
+    featureArray.properties = response.data
+    featureArray.geometry = {
+      type: "Point",
+      coordinates:[]
+    }
+    response.data.map(function(result){
+      result.SHAPE.points.map(function(point){
+        featureArray.geometry.coordinates = [point.x, point.y]
+      })
+    })*/
+    geojsonResult.features = response.data
+    geojsonResult.features.map(function(result,i){
+      
+      var jsonData =  {
+        geometry: new Point({
+          x:result.SHAPE.points[0].x,
+          y:result.SHAPE.points[1].y
+        }),
+        properties:{
+          ObjectID:i,
+          DC:result.DC,
+          POP:result.POP
+        }
+      
+      }
+      geo.add(jsonData)
+     
+    })
+     console.log(geo)
+}) 
+
+  const createGraphics = geoJson => {
+      //console.log(geoJson)
+      return geoJson.features.map((feature, i) => {
+          var coordinate = feature.SHAPE.points.map(function(point){
+              return new Point({
+              x: point.x,
+              y: point.y
+            })
+          })
+
+          var c = coordinate.map(function(pnt){
+            return new Graphic({
+              geometry:pnt
+            })
+      })
+       console.log(c)
+      })
+    
+  };
+
+  const updateLayer = graphics => {
+    return featureLayer.applyEdits({
+      addFeatures: graphics
+    });
+  };
+
+  
+  view.when(() => {
+    fetchGeoJson()
+      .then(createGraphics)
+      .then(updateLayer)
+    
+  });
+  
+});
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,2001 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0766368631886,
+     24.8212112116714
+    ]
+   },
+   "properties": {
+    "f1": "ODB Saadi Lane-05 Fat-03",
+    "f2": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0759069173853,
+     24.8260271614104
+    ]
+   },
+   "properties": {
+    "f1": "ODB Saadi Lane-05 Fat-02",
+    "f2": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0773913592887,
+     24.8192385491098
+    ]
+   },
+   "properties": {
+    "f1": "ODB Saadi Lane-05 Fat-01",
+    "f2": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0586677904096,
+     24.8355368601481
+    ]
+   },
+   "properties": {
+    "f1": null,
+    "f2": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0333455000321,
+     24.8348503411645
+    ]
+   },
+   "properties": {
+    "f1": "ODB GT-01 Fat-02",
+    "f2": 5
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0689016271391,
+     24.889845714591
+    ]
+   },
+   "properties": {
+    "f1": "ODB DS-01 B Fat-01",
+    "f2": 6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0870809378572,
+     24.8809438235798
+    ]
+   },
+   "properties": {
+    "f1": "KDA-01 Fat-01",
+    "f2": 7
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0813955020866,
+     24.8849328323141
+    ]
+   },
+   "properties": {
+    "f1": "KDA-01 Fat-02",
+    "f2": 8
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0829002879728,
+     24.8881688251688
+    ]
+   },
+   "properties": {
+    "f1": "KDA-01 Fat-03",
+    "f2": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0886633088516,
+     24.8855868807502
+    ]
+   },
+   "properties": {
+    "f1": "KDA-01 Fat-04",
+    "f2": 10
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0879396258479,
+     24.8847556128717
+    ]
+   },
+   "properties": {
+    "f1": "KDA-01 Fat-05",
+    "f2": 11
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0925659748787,
+     24.8800570630097
+    ]
+   },
+   "properties": {
+    "f1": "ODB KDA-01 Fat-01",
+    "f2": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0884372521042,
+     24.8814728022147
+    ]
+   },
+   "properties": {
+    "f1": "ODB KDA-01 Fat-02",
+    "f2": 13
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0751811996768,
+     24.8859602719969
+    ]
+   },
+   "properties": {
+    "f1": "ODB Rangoonwala Fat-01",
+    "f2": 14
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0846410282785,
+     24.8690565890128
+    ]
+   },
+   "properties": {
+    "f1": "MAS-01 Fat-01",
+    "f2": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0848095689844,
+     24.8706653061197
+    ]
+   },
+   "properties": {
+    "f1": "MAS-01 Fat-02",
+    "f2": 16
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0913547494948,
+     24.8741366709206
+    ]
+   },
+   "properties": {
+    "f1": "MAS-01 Fat-03",
+    "f2": 17
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0621243349142,
+     24.8854213370646
+    ]
+   },
+   "properties": {
+    "f1": "BMS-01 Fat-01",
+    "f2": 18
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0655237529145,
+     24.8833814746864
+    ]
+   },
+   "properties": {
+    "f1": "BMS-01 Fat-02",
+    "f2": 19
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0634593616178,
+     24.8816777911602
+    ]
+   },
+   "properties": {
+    "f1": "BMS-01 Fat-03",
+    "f2": 20
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0650970225805,
+     24.8875243911097
+    ]
+   },
+   "properties": {
+    "f1": "BMS-01 Fat-04",
+    "f2": 21
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0653568349788,
+     24.8852580025971
+    ]
+   },
+   "properties": {
+    "f1": "BMS-01 Fat-05",
+    "f2": 22
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0664565290307,
+     24.8813027871402
+    ]
+   },
+   "properties": {
+    "f1": "Naheed-01 Fat-02",
+    "f2": 23
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.075616982764,
+     24.8761382002945
+    ]
+   },
+   "properties": {
+    "f1": "Fat-03 Ext",
+    "f2": 24
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0643848648877,
+     24.8802831876166
+    ]
+   },
+   "properties": {
+    "f1": "Naheed-01 Fat-04",
+    "f2": 25
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0675088830104,
+     24.8835721519864
+    ]
+   },
+   "properties": {
+    "f1": "Naheed-B Fat-02",
+    "f2": 26
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0727282484182,
+     24.8843953312236
+    ]
+   },
+   "properties": {
+    "f1": "Naheed-B Fat-03",
+    "f2": 27
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.07560038661,
+     24.8825759966413
+    ]
+   },
+   "properties": {
+    "f1": "Naheed-B Fat-04",
+    "f2": 28
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.073882615594,
+     24.8801334429698
+    ]
+   },
+   "properties": {
+    "f1": "Naheed-B Fat-05",
+    "f2": 29
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0765938301773,
+     24.8744095495635
+    ]
+   },
+   "properties": {
+    "f1": "ODB AK-01 Fat-01",
+    "f2": 30
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0766621015187,
+     24.8757126672141
+    ]
+   },
+   "properties": {
+    "f1": "ODB AK-01 Fat-02",
+    "f2": 31
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0724932505869,
+     24.8754331329381
+    ]
+   },
+   "properties": {
+    "f1": "ODB AK FAT 03",
+    "f2": 32
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0794998770232,
+     24.8751007530001
+    ]
+   },
+   "properties": {
+    "f1": "ODB AK-01 Fat-04",
+    "f2": 33
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0792253853422,
+     24.8786145479081
+    ]
+   },
+   "properties": {
+    "f1": "AK-B Fat-01",
+    "f2": 34
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0813357710646,
+     24.8837252282462
+    ]
+   },
+   "properties": {
+    "f1": "AK-B Fat-02",
+    "f2": 35
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0831732010019,
+     24.8781941533311
+    ]
+   },
+   "properties": {
+    "f1": "AK-01 B Fat-03",
+    "f2": 36
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0799090548291,
+     24.8729490561185
+    ]
+   },
+   "properties": {
+    "f1": "ODB TS-03 Fat-01",
+    "f2": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0822733806693,
+     24.8745587412726
+    ]
+   },
+   "properties": {
+    "f1": "T-03 Fat Ext",
+    "f2": 38
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0882005297142,
+     24.8744849321913
+    ]
+   },
+   "properties": {
+    "f1": "TS-03 B Fat-01",
+    "f2": 39
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0887368667881,
+     24.8778411811006
+    ]
+   },
+   "properties": {
+    "f1": "ODB TS-03 Fat-01",
+    "f2": 40
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0695165633033,
+     24.8871669671227
+    ]
+   },
+   "properties": {
+    "f1": "DS-01 Fat-01",
+    "f2": 41
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0685209830325,
+     24.8873090865586
+    ]
+   },
+   "properties": {
+    "f1": "DS-01 Fat-02",
+    "f2": 42
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0662053060736,
+     24.8829351146193
+    ]
+   },
+   "properties": {
+    "f1": "ODB 4 Minnar FAT 0",
+    "f2": 43
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0662262483025,
+     24.8829350790688
+    ]
+   },
+   "properties": {
+    "f1": "ODB 4 Minnar FAT 03",
+    "f2": 44
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.065615521305,
+     24.8835917574301
+    ]
+   },
+   "properties": {
+    "f1": "ODB 4 Minnar FAT 02",
+    "f2": 45
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0665432856011,
+     24.8827956646167
+    ]
+   },
+   "properties": {
+    "f1": "ODB 4 Minnar FAT 01",
+    "f2": 46
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0676761582249,
+     24.7976119407708
+    ]
+   },
+   "properties": {
+    "f1": "KB-16-2 FAT-05",
+    "f2": 47
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0653802181756,
+     24.7930478968408
+    ]
+   },
+   "properties": {
+    "f1": "KB-16 FAT-4",
+    "f2": 48
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0633375414163,
+     24.7946096829027
+    ]
+   },
+   "properties": {
+    "f1": "FAT-01 ODB-KB16-02",
+    "f2": 49
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0639730426585,
+     24.7953479832327
+    ]
+   },
+   "properties": {
+    "f1": "FAT-02",
+    "f2": 50
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0695843966943,
+     24.7994754400003
+    ]
+   },
+   "properties": {
+    "f1": "KB-16-2 FAT-5 Ext",
+    "f2": 51
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0550499330996,
+     24.8028627232573
+    ]
+   },
+   "properties": {
+    "f1": "KS-16/02 FAT-01",
+    "f2": 52
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0613427084057,
+     24.8014117557332
+    ]
+   },
+   "properties": {
+    "f1": "KS-16-02 FAT-05",
+    "f2": 53
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0586448329679,
+     24.7985410400696
+    ]
+   },
+   "properties": {
+    "f1": "KS-16/02 FAT-02 Ext",
+    "f2": 54
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.06065684846,
+     24.8058280215618
+    ]
+   },
+   "properties": {
+    "f1": "KS-16/02 FAT-03",
+    "f2": 55
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0573729759709,
+     24.8006979990595
+    ]
+   },
+   "properties": {
+    "f1": "KS-16/02 FAT-02",
+    "f2": 56
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0729998733448,
+     24.8082422949088
+    ]
+   },
+   "properties": {
+    "f1": "RL-08 FAT-02",
+    "f2": 57
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0711771404827,
+     24.8096492182435
+    ]
+   },
+   "properties": {
+    "f1": "RL-08 FAT-02 Ext",
+    "f2": 58
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0724739521391,
+     24.8130174223091
+    ]
+   },
+   "properties": {
+    "f1": "RL-08 FAT-03",
+    "f2": 59
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0744117928998,
+     24.8149479019004
+    ]
+   },
+   "properties": {
+    "f1": "RL-08 FAT-04",
+    "f2": 60
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0627096512722,
+     24.7925143902206
+    ]
+   },
+   "properties": {
+    "f1": "ODB-01 FAT-0",
+    "f2": 61
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.063072237701,
+     24.7926016219936
+    ]
+   },
+   "properties": {
+    "f1": "DB-01 FAT-01",
+    "f2": 62
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0625277986253,
+     24.7919467254171
+    ]
+   },
+   "properties": {
+    "f1": "ODB-01 FAT-02",
+    "f2": 63
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0665221257771,
+     24.7893100293186
+    ]
+   },
+   "properties": {
+    "f1": "ODB-01 FAT-04",
+    "f2": 64
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0596817088917,
+     24.7890159718173
+    ]
+   },
+   "properties": {
+    "f1": "ODB-04 FAT-03",
+    "f2": 65
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0611770383368,
+     24.7909974612121
+    ]
+   },
+   "properties": {
+    "f1": "ODB-04 FAT-0",
+    "f2": 66
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0614193098007,
+     24.7908017376212
+    ]
+   },
+   "properties": {
+    "f1": "ODB-04 FAT-01",
+    "f2": 67
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0619555890196,
+     24.7914140211973
+    ]
+   },
+   "properties": {
+    "f1": "ODB-04 FAT-02",
+    "f2": 68
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0585321688278,
+     24.7931117489296
+    ]
+   },
+   "properties": {
+    "f1": "ODB-04 FAT-04",
+    "f2": 69
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0585804663093,
+     24.7929834266073
+    ]
+   },
+   "properties": {
+    "f1": "ODB-06 FAT-04",
+    "f2": 70
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0607557296529,
+     24.7903147032575
+    ]
+   },
+   "properties": {
+    "f1": "ODB-06 FAT-02",
+    "f2": 71
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.060225489146,
+     24.7896754860208
+    ]
+   },
+   "properties": {
+    "f1": "ODB-06 FAT-01",
+    "f2": 72
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0596624804227,
+     24.7890094047066
+    ]
+   },
+   "properties": {
+    "f1": "ODB-06 FAT-03",
+    "f2": 73
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0707699915545,
+     24.7938943845942
+    ]
+   },
+   "properties": {
+    "f1": "KB-16 FAT-05A",
+    "f2": 74
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0658484241239,
+     24.7953561770639
+    ]
+   },
+   "properties": {
+    "f1": "KB-16 FAT-0",
+    "f2": 75
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0655535120389,
+     24.7952079822673
+    ]
+   },
+   "properties": {
+    "f1": "KB-16 FAT-03",
+    "f2": 76
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0670423866854,
+     24.7968025393314
+    ]
+   },
+   "properties": {
+    "f1": "KB-16 FAT-06",
+    "f2": 77
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0635714031972,
+     24.7983562589882
+    ]
+   },
+   "properties": {
+    "f1": "KB-16 FAT-01",
+    "f2": 78
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0586596254464,
+     24.7810400366187
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-04",
+    "f2": 79
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0608074620156,
+     24.7834077582667
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-5A",
+    "f2": 80
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0599716443801,
+     24.7842398875947
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-05",
+    "f2": 81
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0605051273052,
+     24.786289821997
+    ]
+   },
+   "properties": {
+    "f1": "SAB-03 FAT-03",
+    "f2": 82
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.057305059173,
+     24.7863262062562
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-01",
+    "f2": 83
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0561865178251,
+     24.7853944144485
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-07",
+    "f2": 84
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0562120503336,
+     24.785492255266
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-02",
+    "f2": 85
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0511706117346,
+     24.7851826113202
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-09",
+    "f2": 86
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0521013246508,
+     24.7863854386734
+    ]
+   },
+   "properties": {
+    "f1": "SAB-02 FAT-06",
+    "f2": 87
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0592033006874,
+     24.8043593274296
+    ]
+   },
+   "properties": {
+    "f1": "KS-12 FAT-04",
+    "f2": 88
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0601517412419,
+     24.8052916882193
+    ]
+   },
+   "properties": {
+    "f1": "KS-12 FAT-0",
+    "f2": 89
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.060677915721,
+     24.8058762458072
+    ]
+   },
+   "properties": {
+    "f1": "KS-12 FAT-01",
+    "f2": 90
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0618876260284,
+     24.803119176765
+    ]
+   },
+   "properties": {
+    "f1": "KS-12 FAT-02",
+    "f2": 91
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0639654018689,
+     24.804114577968
+    ]
+   },
+   "properties": {
+    "f1": "KS-12 FAT-5A",
+    "f2": 92
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0646230218129,
+     24.8047863592721
+    ]
+   },
+   "properties": {
+    "f1": "KS-12 FAT06",
+    "f2": 93
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0656852236614,
+     24.8006209786748
+    ]
+   },
+   "properties": {
+    "f1": "KS-12 FAT-01",
+    "f2": 94
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0569996592998,
+     24.8048411117492
+    ]
+   },
+   "properties": {
+    "f1": "KS-16 FAT-04",
+    "f2": 95
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0602862120909,
+     24.7997602088885
+    ]
+   },
+   "properties": {
+    "f1": "KS-16 FAT-03",
+    "f2": 96
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": null,
+   "properties": {
+    "f1": null,
+    "f2": 607
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0599976316865,
+     24.7999350106091
+    ]
+   },
+   "properties": {
+    "f1": "KS-16 FAT-01",
+    "f2": 97
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0600368995346,
+     24.7999591668039
+    ]
+   },
+   "properties": {
+    "f1": "KS-16 FAT-02",
+    "f2": 98
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0569485635911,
+     24.7969282742074
+    ]
+   },
+   "properties": {
+    "f1": "KS-22 FAT-01",
+    "f2": 99
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0527505373593,
+     24.7976323391442
+    ]
+   },
+   "properties": {
+    "f1": "KS-22 FAT-04",
+    "f2": 100
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0544952699257,
+     24.7993657854666
+    ]
+   },
+   "properties": {
+    "f1": "KS-22 FAT-03",
+    "f2": 101
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0532810653546,
+     24.8009757172474
+    ]
+   },
+   "properties": {
+    "f1": "KS-22 FAT-02",
+    "f2": 102
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0513075472755,
+     24.7989162022679
+    ]
+   },
+   "properties": {
+    "f1": "KS-26 FAT-03",
+    "f2": 103
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0517064638986,
+     24.7966198117066
+    ]
+   },
+   "properties": {
+    "f1": "KS-26 FAT-01",
+    "f2": 104
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0539760222934,
+     24.7936170797816
+    ]
+   },
+   "properties": {
+    "f1": "KS-26 FAT-04",
+    "f2": 105
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0542148386745,
+     24.7938862140883
+    ]
+   },
+   "properties": {
+    "f1": "SAB-01 FAT-03",
+    "f2": 106
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0534344276836,
+     24.7930300251747
+    ]
+   },
+   "properties": {
+    "f1": "SAB-01 FAT-02",
+    "f2": 107
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0505491439863,
+     24.7952615427492
+    ]
+   },
+   "properties": {
+    "f1": "SAB-01 FAT-01",
+    "f2": 108
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0486535733683,
+     24.7932051142841
+    ]
+   },
+   "properties": {
+    "f1": "SAB-01 FAT-0",
+    "f2": 109
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0484886840141,
+     24.7959321224391
+    ]
+   },
+   "properties": {
+    "f1": "SAB-01 FAT-04",
+    "f2": 110
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0528408302276,
+     24.7924388307304
+    ]
+   },
+   "properties": {
+    "f1": "SAB-01 FAT-05",
+    "f2": 111
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0675045741909,
+     24.8025097664079
+    ]
+   },
+   "properties": {
+    "f1": "KB-05 FAT-03",
+    "f2": 112
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.071946080023,
+     24.8017588362336
+    ]
+   },
+   "properties": {
+    "f1": "KB-05 FAT-05",
+    "f2": 113
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0738074502203,
+     24.8038757647361
+    ]
+   },
+   "properties": {
+    "f1": "KB-05 FAT-01",
+    "f2": 114
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0709415787847,
+     24.8061530940705
+    ]
+   },
+   "properties": {
+    "f1": "KB-05 FAT-02",
+    "f2": 115
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0730232850335,
+     24.8082684554552
+    ]
+   },
+   "properties": {
+    "f1": "KB-05 FAT-02A",
+    "f2": 116
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0758300411146,
+     24.8058210931434
+    ]
+   },
+   "properties": {
+    "f1": "KB-5/2 FAT(POPULAR AVENUE)",
+    "f2": 117
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.076799429923,
+     24.8000655932876
+    ]
+   },
+   "properties": {
+    "f1": "KB-5/2 FAT-5 EXT",
+    "f2": 118
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0711527078489,
+     24.7974479802409
+    ]
+   },
+   "properties": {
+    "f1": "KB 5/2 FAT-4",
+    "f2": 119
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.069237725518,
+     24.7990292281354
+    ]
+   },
+   "properties": {
+    "f1": "KB-12 FAT-01",
+    "f2": 120
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0687507035117,
+     24.798527460063
+    ]
+   },
+   "properties": {
+    "f1": "KB-12 FAT-02",
+    "f2": 121
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0658694207855,
+     24.8007963816528
+    ]
+   },
+   "properties": {
+    "f1": "KB-12 FAT-3",
+    "f2": 122
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0746284712519,
+     24.7981585130359
+    ]
+   },
+   "properties": {
+    "f1": "KB-12 FAT-06",
+    "f2": 123
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0608132764052,
+     24.7833570160278
+    ]
+   },
+   "properties": {
+    "f1": "SAB-03 FAT-03",
+    "f2": 124
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0564692443412,
+     24.7802807450568
+    ]
+   },
+   "properties": {
+    "f1": "SAB-03 FAT-02",
+    "f2": 125
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0562413395455,
+     24.7854014596378
+    ]
+   },
+   "properties": {
+    "f1": "SAB-03 FAT-04",
+    "f2": 126
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0504282041106,
+     24.7899396609625
+    ]
+   },
+   "properties": {
+    "f1": "SAB-04 FAT-05",
+    "f2": 127
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0475176268163,
+     24.7885875697618
+    ]
+   },
+   "properties": {
+    "f1": "SAB-04 FAT-04",
+    "f2": 128
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0499747743707,
+     24.7894908392998
+    ]
+   },
+   "properties": {
+    "f1": "SAB-04 FAT-0",
+    "f2": 129
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0509747480607,
+     24.7903535347214
+    ]
+   },
+   "properties": {
+    "f1": "SAB-04 New FAT 31 Rahat",
+    "f2": 130
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0627324526864,
+     24.8108882305812
+    ]
+   },
+   "properties": {
+    "f1": "KS-05 FAT-03",
+    "f2": 131
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0658334232264,
+     24.8101679445945
+    ]
+   },
+   "properties": {
+    "f1": "KS-05 FAT-01",
+    "f2": 132
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0673230115316,
+     24.8127764397301
+    ]
+   },
+   "properties": {
+    "f1": "KS-05 FAT-06",
+    "f2": 133
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0671048774892,
+     24.8074340552264
+    ]
+   },
+   "properties": {
+    "f1": "KS-05 FAT-02A",
+    "f2": 134
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0680486156847,
+     24.808346578964
+    ]
+   },
+   "properties": {
+    "f1": "KS-05 FAT-07",
+    "f2": 135
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.068014873682,
+     24.808407190229
+    ]
+   },
+   "properties": {
+    "f1": "KS-05 FAT-02",
+    "f2": 136
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0649866574104,
+     24.8058490708399
+    ]
+   },
+   "properties": {
+    "f1": "KS-05/02 FAT-05",
+    "f2": 137
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0687011494817,
+     24.8089898059553
+    ]
+   },
+   "properties": {
+    "f1": "KS 5/2 FAT-02",
+    "f2": 138
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0636506690377,
+     24.8092524533045
+    ]
+   },
+   "properties": {
+    "f1": "KS 5/2 FAT-08",
+    "f2": 139
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0672567492948,
+     24.8126762792323
+    ]
+   },
+   "properties": {
+    "f1": "KS 5/2 FAT-04",
+    "f2": 140
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0643654811089,
+     24.8125673371285
+    ]
+   },
+   "properties": {
+    "f1": "KS 5/2 FAT-04",
+    "f2": 141
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     67.0699790661148,
+     24.8171831919202
+    ]
+   },
+   "properties": {
+    "f1": "KS 5/2 FAT-03",
+    "f2": 142
+   }
+  }
+ ]
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>JSON</title>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.12/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.12/"></script>
+
+    <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/request",
+        "esri/Graphic",
+        "esri/geometry/Point",
+        "esri/layers/FeatureLayer",
+        "esri/widgets/Search",
+        "esri/widgets/Legend",
+        "esri/tasks/support/Query",
+        "esri/tasks/QueryTask",
+        "esri/widgets/Editor",
+        "esri/geometry/projection",
+        "esri/geometry/SpatialReference"
+      ], function(Map, MapView, esriRequest, Graphic,Point, FeatureLayer,Search, Legend, Query,QueryTask,
+      Editor, projection, SpatialReference) {
+
+      projection.load()
+
+      let url ="http://localhost:7000/dc"
+
+      let myData = []
+
+      let fields = [
+        {
+          name: "ObjectID",
+          alias: "ObjectID",
+          type: "oid"
+        },
+        {
+          name: "Name",
+          alias: "Name",
+          type: "string"
+        },
+        {
+          name: "ID",
+          alias: "ID",
+          type: "string"
+        },
+        {
+          name: "POP",
+          alias: "POP",
+          type: "long"
+        },
+        {
+          name: "Splitter",
+          alias: "Splitter",
+          type: "string"
+        },
+         {
+          name: "Placement",
+          alias: "Placement",
+          type: "string"
+        },
+         {
+          name: "Comment",
+          alias: "Comment",
+          type: "string"
+        }
+      ];
+
+      let pTemplate = {
+        title: "{title}",
+        content: [
+          {
+            type: "fields",
+            fieldInfos: [
+              {
+                fieldName: "OBJECTID",
+                label: "OBJECTID",
+                visible: true
+              },
+              {
+                fieldName: "Name",
+                label: "Name",
+                visible: true
+              },
+              {
+                fieldName: "ID",
+                label: "ID",
+                visible: true
+              },
+              {
+                fieldName: "POP",
+                label: "POP",
+                visible: true
+              },
+              {
+                fieldName: "Splitter",
+                label: "Splitter",
+                visible: true
+              },
+              {
+                fieldName: "Placement",
+                label: "Placement",
+                visible: true
+              },
+              {
+                fieldName: "Comment",
+                label: "Comment",
+                visible: true
+              }
+            ]
+          }
+        ]
+      };
+
+      var rendererCheck = {
+        type: "unique-value",  // autocasts as new UniqueValueRenderer()
+        field: "POP",
+        defaultSymbol: {
+          type: "simple-marker",
+          color: "black",
+          size: 4,
+           outline: {  // autocasts as new SimpleLineSymbol()
+              width: 0.5,
+              color: "white"
+            }
+          },  // autocasts as new SimpleFillSymbol()
+        uniqueValueInfos: [{
+          // All features with value of "North" will be blue
+          value: 21001,
+          symbol: {
+            type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+            color: "blue",
+            size: 5,
+             outline: {  // autocasts as new SimpleLineSymbol()
+              width: 0.5,
+              color: "white"
+            }
+          }
+        }, {
+          // All features with value of "East" will be green
+          value: 21003,
+          symbol: {
+            type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+            color: "green",
+            size: 5,
+             outline: {  // autocasts as new SimpleLineSymbol()
+              width: 0.5,
+              color: "white"
+            }
+          }
+        }, {
+          // All features with value of "South" will be red
+          value: 21004,
+          symbol: {
+            type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+            color: "red",
+            size: 5,
+             outline: {  // autocasts as new SimpleLineSymbol()
+              width: 0.5,
+              color: "white"
+            }
+          }
+        }, {
+          // All features with value of "West" will be yellow
+          value: 21005,
+          symbol: {
+            type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+            color: "yellow",
+            size: 5,
+             outline: {  // autocasts as new SimpleLineSymbol()
+              width: 0.5,
+              color: "black"
+            }
+          }
+        } ,
+        {
+          // All features with value of "West" will be yellow
+          value: 21006,
+          symbol: {
+            type: "simple-marker",  // autocasts as new SimpleFillSymbol()
+            color: "#ba0af3",
+            size: 5,
+             outline: {  // autocasts as new SimpleLineSymbol()
+              width: 0.5,
+              color: "white"
+            }
+          }
+        }]
+      };
+
+      let map = new Map({
+        basemap: "satellite",
+      });
+
+      let view = new MapView({
+          container: "viewDiv",
+          center: [67.068037, 24.872328],
+          zoom: 12,
+          map: map
+        });
+
+       let options = {
+        query: {
+          f: "json"
+        },
+        responseType: "json"
+      };
+
+     
+    let fetchData = () =>   esriRequest(url, options).then(response => response.data)
+
+    let webservice = res => {
+
+          res.map(function(result, i){
+
+             let resultPnts = result.Shape.points.map(function(point){
+
+             return new Point({
+                x:point.x,
+                y:point.y,
+                spatialReference : result.Shape.srid
+              });
+             
+            })
+
+              let atts = {
+                "ObjectID": i,
+                "Name": result.Name,
+                "ID": result.ID,
+                "POP": result.POP,
+                "Splitter": result.Splitter,
+                "Placement": result.Placement,
+                "Comment": result.Comment
+               
+              };
+
+              let graArr = resultPnts.map(function(pnt){
+          
+              let projectedPoint = projection.project(pnt,view.spatialReference);
+
+               let markerSymbol = {
+                    type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+                    color: [226, 119, 40]
+                  };
+
+                let g =  new Graphic({
+                  geometry:projectedPoint,
+                  symbol: markerSymbol,
+                  attributes: atts
+                })
+       
+                myData.push(g)   
+              
+              })
+
+              return graArr
+          })
+
+        let layer = new FeatureLayer({
+            geometryType: "point",
+            source: myData,
+            fields: fields,
+            objectIdField: "ObjectID",
+            renderer: rendererCheck,
+            popupTemplate: pTemplate,
+            //definitionExpression: "CATEGORY= '2 Wheeler'"
+        });
+          map.add(layer)
+
+/*
+        let editor = new Editor({
+          view:view
+        })
+        view.ui.add(editor, 'top-right')*/
+
+        var searchWidget = new Search({
+        view: view,
+        sources:[
+          {
+            layer: layer,
+            searchFields: ["ID"],
+            displayField: "ID",
+            exactMatch: false,
+            outFields: ["*"],
+            name: "ID",
+            placeholder: "2100103",
+            scale: 10,
+            maxResults: 6,
+            maxSuggestions: 6,
+            minSuggestCharacters: 0,
+            resultSymbol: {
+                type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+                color: [239, 25, 25],
+                size: 10,
+                width: 30,
+                height: 30,
+                xoffset: 0,
+                yoffset: 0
+            }
+          }
+        ]
+      });
+
+      var legend = new Legend({
+        view: view,
+        layerInfos: [{
+          layer: layer,
+          title: "Legend"
+        }]
+      });
+
+      view.ui.add(legend, "bottom-left");
+          
+      view.ui.add(searchWidget, {
+        position: "top-right",
+        index: 2
+      });
+        
+    }
+    
+     /*  setInterval(() => {
+          console.log('kawish')
+        }, 5000)*/
+
+    view.when(() =>{
+        fetchData()
+      .then(webservice)
+      
+     let myVar =  setInterval(() => {
+        fetchData()
+      },5000)
+      
+     // clearInterval(myVar);
+
+    })
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
